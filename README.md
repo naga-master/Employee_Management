@@ -41,3 +41,27 @@ python manage.py migrate
 ```
 python manage.py runserver
 ```
+
+### API Details
+
+```
+List all employees details - GET -  http://127.0.0.1:8000/EmployeeDetails/ 
+List all employee name - GET - http://127.0.0.1:8000/Employees/
+Add new employee  - POST - http://127.0.0.1:8000/CreateEmployee/
+  Request Type = application/json
+  {
+    "id": null,
+    "name": "",
+    "age": "",
+    "email_id": "",
+    "designation": ""
+  }
+
+update employee designation - PUT - http://127.0.0.1:8000/UpdateEmployee/<id>
+  Request Type = application/json
+  {
+    "designation": ""
+  }
+  
+delete new employee - DELETE - http://127.0.0.1:8000/DeleteEmployee/<id>
+```
